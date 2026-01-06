@@ -56,6 +56,3 @@
 #result = [lst[:mid], lst[mid:]]
 
 #print(result)
-
-
-
