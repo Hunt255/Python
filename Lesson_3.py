@@ -2,29 +2,60 @@
 #Програма має виконувати прості математичні дії (+, -, *, /). Користувачеві пропонується почерзі ввести числа та дію над цими числами, а програма, виходячи з дії, обчислює та друкує результат.
 #Зробити перевірку на те, що при діленні дільник не дорівнює 0!
 
-print("Operations available:")
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
+#print("Operations available:")
+#print("1. Addition")
+#print("2. Subtraction")
+#print("3. Multiplication")
+#print("4. Division")
 
 
-choice = input("Select a number operation (1/2/3/4): ")
+#choice = input("Select a number operation (1/2/3/4): ")
 
-if choice in ('1', '2', '3', '4'):
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+#if choice in ('1', '2', '3', '4'):
+#    num1 = float(input("Enter first number: "))
+#    num2 = float(input("Enter second number: "))
 
-    if choice == '1':
-        print("Result:", num1 + num2)
-    elif choice == '2':
-        print("Result:", num1 - num2)
-    elif choice == '3':
-        print("Result:", num1 * num2)
-    elif choice == '4':
-        if num2 == 0:
-            print("Division by 0 is impossible")
-        else:
-            print("Result:", num1 / num2)
-else:
-    print("Operation wrong")
+#    if choice == '1':
+#        print("Result:", num1 + num2)
+#    elif choice == '2':
+#        print("Result:", num1 - num2)
+#    elif choice == '3':
+#        print("Result:", num1 * num2)
+#    elif choice == '4':
+#        if num2 == 0:
+#            print("Division by 0 is impossible")
+#        else:
+#            print("Result:", num1 / num2)
+#else:
+#    print("Operation wrong")
+
+#3.2. Перемістити елемент у списку
+#Ваша програма має перенести останній елемент списку з кінця на початок, тобто, останній елемент списку має стати першим. Послідовність інших елементів не має змінюватися.
+#Порожній список або список з одним елементом повинен залишитися незмінним.
+#Кількість елементів у списку може бути будь-яким – нуль та більше!
+
+#lst = []
+#if len(lst) > 1:
+#    lst = [lst[-1]] + lst[:-1]
+#print(lst)
+
+
+
+
+#3.3. Розділити один список на два списки
+#Ваша програма повинна вміти розділяти один список на два та помістити їх у новий список. Тобто, в результаті повинен вийти список із 2-х списків.
+#Якщо в початковому списку непарна кількість елементів, то в першому списку має бути більше елементів.
+#Якщо у списку немає елементів, то має бути створений список із двома порожніми списками.
+#Важливо! Потрібно створити рішення, яке обробляє 3 випадки - список порожній, у списку парна кількість елементів і в списку непарна кількість елементів.
+
+
+#lst = [1]
+
+#id = (len(lst) + 1) // 2
+
+#result = [lst[:mid], lst[mid:]]
+
+#print(result)
+
+
+
