@@ -9,6 +9,36 @@
 # Список зареєстрованих слів можна взяти із keyword.kwlist.
 # У результаті перевірки на друк виводиться або True, якщо таке ім'я змінної допустимо, або False - якщо ні.
 
+# import string
+# import keyword
+#
+#
+# input_name = input("Enter a name: ")
+#
+# if input_name[0].isdigit():
+#     print(False)
+#     exit()
+#
+# if input_name in keyword.kwlist:
+#     print(False)
+#     exit()
+#
+# if any(ch.isupper() for ch in input_name):
+#     print(False)
+#     exit()
+#
+# if input_name.count("_") > 1:
+#     print(False)
+#     exit()
+#
+# allowed_punctuation = string.punctuation.replace("_", "")
+#
+# for ch in input_name:
+#     if ch in allowed_punctuation or ch == " ":
+#         print(False)
+#         exit()
+#
+# print(True)
 
 
 # 5.2. Модифікувати калькулятор
@@ -56,3 +86,9 @@
 # підсумкова довжина hashtag має бути не більше 140 символів.
 # кожне слово починається з великої літери.
 # якщо довжина фінішного хештегу більше 140 символів - обрізати підсумковий рядок до 140 символів.
+
+import string
+import keyword
+
+
+input_name = input("Enter a name: ")
