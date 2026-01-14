@@ -87,8 +87,19 @@
 # кожне слово починається з великої літери.
 # якщо довжина фінішного хештегу більше 140 символів - обрізати підсумковий рядок до 140 символів.
 
-import string
-import keyword
-
-
-input_name = input("Enter a name: ")
+# import string
+#
+# input_string = input("Enter a string: ")
+#
+# for ch in string.punctuation:
+#     text = input_string.replace(ch, "")
+#
+# words = input_string.split()
+#
+# hashtag = "#"
+#
+# for word in words:
+#     hashtag += word.capitalize()
+#
+#
+# print(hashtag[:140])
