@@ -33,6 +33,43 @@
 # кількість днів, годин, хвилин, а те що залишиться - це секунди, які менше 60 ;)
 # Доповнити провідними нулями можна за допомогою методу zfill(2)
 
+# num = int(input("Enter a number from 1 to 8640000 : "))
+
+# v1
+#
+# if 0 < num < 8640000:
+#     days = num // 86400
+#     hours = (num % 86400) // 3600
+#     minutes = ((num % 86400) % 3600) // 60
+#     seconds = ((num % 86400) % 3600) % 60
+#
+#     if days == 1:
+#         day_word = "день"
+#     elif 2 <= days <= 4:
+#         day_word = "дні"
+#     else:
+#         day_word = "днів"
+#
+#     print(f"{days} {day_word} {str(hours).zfill(2)}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}")
+# else:
+#     print("The number is out of range!")
+
+# v2
+# if 0 < num < 8640000:
+#     days, rem = divmod(num, 86400)
+#     hours, rem = divmod(rem, 3600)
+#     minutes, seconds = divmod(rem, 60)
+#
+#     if days == 1:
+#         day_word = "день"
+#     elif 2 <= days <= 4:
+#         day_word = "дні"
+#     else:
+#         day_word = "днів"
+#
+#     print(f"{days} {day_word} {str(hours).zfill(2)}:{str(minutes).zfill(2)}:{str(seconds).zfill(2)}")
+# else:
+#     print("The number is out of range!")
 
 
 # 6.3. Добуток чисел
