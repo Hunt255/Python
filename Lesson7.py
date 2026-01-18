@@ -21,7 +21,11 @@
 # Вихідні аргументи: string.
 
 # def correct_sentence(text):
-#     pass
+#     if not text[0].isupper():
+#         text = text[0].upper() + text[1:]
+#     if not text.endswith("."):
+#         text += "."
+#     return text
 #
 # assert correct_sentence("greetings, friends") == "Greetings, friends.", 'Test1'
 # assert correct_sentence("hello") == "Hello.", 'Test2'
