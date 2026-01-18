@@ -2,6 +2,8 @@
 # Написати функцію say_hi, яка представить людину за переданими параметрами.
 # Вхідні дані: Два аргументи рядок(str) та позитивне число(int)
 # Функція має повернути рядок.
+from idlelib.debugobj import myrepr
+
 
 # def say_hi(name, age):
 #     return f"Hi. My name is {name} and I'm {age} years old"
@@ -76,3 +78,17 @@
 # Один список з числами кратними 3, інший з кратними числами 5.
 # За допомогою множин створіть набір з числами, які є в обох множинах (перетин).
 # Функція повинна повернути цю множину як результат своєї роботи.
+
+# def common_elements():
+#
+#     lst1 = list(range(0, 100, 3))
+#     lst2 = list(range(0, 100, 5))
+#
+#     set1 = set(lst1)
+#     set2 = set(lst2)
+#
+#     return set1.intersection(set2)
+#
+# assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
+
+
