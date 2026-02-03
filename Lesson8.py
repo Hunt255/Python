@@ -41,6 +41,23 @@
 # зправа наліво без урахування знаків пунктуації та розмірності букв.
 # Функція приймає на вхід рядок, та повертає булеве значення True або False
 
+# def is_palindrome(text):
+#     cleaned = ''.join(ch.lower() for ch in text if ch.isalnum())
+#     left, right = 0, len(cleaned) - 1
+#
+#     while left < right:
+#         if cleaned[left] != cleaned[right]:
+#             return False
+#         left += 1
+#         right -= 1
+#
+#     return True
+#
+# assert is_palindrome('A man, a plan, a canal: Panama') == True, 'Test1'
+# assert is_palindrome('0P') == False, 'Test2'
+# assert is_palindrome('a.') == True, 'Test3'
+# assert is_palindrome('aurora') == False, 'Test4'
+# print("ОК")
 
 
 # 8.3. Унікальне число
@@ -48,3 +65,14 @@
 # знаходить серед них унікальне число та повертати його.
 # Унікальне число - це число, яке зустрічається в списку один раз.
 # Випадок, коли в одному списку буде кілька унікальних чисел, перевіряти не потрібно.
+
+# def find_unique_value(some_list):
+#
+#     for value in some_list:
+#         if some_list.count(value) == 1:
+#             return value
+#
+# assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
+# assert find_unique_value([2, 3, 3, 3, 5, 5]) == 2, 'Test2'
+# assert find_unique_value([5, 5, 5, 2, 2, 0.5]) == 0.5, 'Test3'
+# print("ОК")
